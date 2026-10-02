@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://gpsrjbusiness-cmd.github.io/srj-business/sitemap.xml
+Sitemap: https://srjbusiness.github.io/srj-business/sitemap.xml

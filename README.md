@@ -47,7 +47,7 @@ python3 -m http.server 8000
 
 1. **Settings → Pages**
 2. Source: **Deploy from a branch** · Branch: **main** · Pasta: **/ (root)**
-3. Endereço atual: https://gpsrjbusiness-cmd.github.io/srj-business/
+3. Endereço atual: https://srjbusiness.github.io/srj-business/
 
 Todos os caminhos de arquivos são relativos, então o site funciona tanto no endereço do GitHub Pages quanto em um domínio próprio.
 
@@ -76,20 +76,18 @@ Quando houver um domínio oficial (ex.: registrado no Registro.br):
 1. Em **Settings → Pages → Custom domain**, informe o domínio (o GitHub cria o arquivo `CNAME`).
 2. No Registro.br, configure o DNS:
    - domínio raiz: registros **A** para `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
-   - `www`: registro **CNAME** para `gpsrjbusiness-cmd.github.io`
+   - `www`: registro **CNAME** para `srjbusiness.github.io`
 3. Marque **Enforce HTTPS**.
-4. Troque a URL `https://gpsrjbusiness-cmd.github.io/srj-business/` pela nova em: `index.html` (canonical, Open Graph, Twitter e JSON-LD), `sitemap.xml`, `robots.txt` e `404.html`.
+4. Troque a URL `https://srjbusiness.github.io/srj-business/` pela nova em: `index.html` (canonical, Open Graph, Twitter e JSON-LD), `sitemap.xml`, `robots.txt` e `404.html`.
 
 Observação: em um site de projeto (`/srj-business/`), o `robots.txt` não fica na raiz do domínio e é ignorado pelos buscadores; com domínio próprio ele passa a valer. O `sitemap.xml` pode ser enviado manualmente no Google Search Console.
 
-## Sobre o nome "gpsrjbusiness-cmd"
+## Conta GitHub
 
-`gpsrjbusiness-cmd` é apenas o nome atual da conta no GitHub e aparece somente onde é tecnicamente necessário (URL do GitHub Pages). O e-mail `gpsrjbusiness@gmail.com` é o endereço real de contato. A marca pública é exclusivamente **SRJ Business**.
+- Conta: https://github.com/srjbusiness
+- Repositório: https://github.com/srjbusiness/srj-business
+- Site: https://srjbusiness.github.io/srj-business/
 
-Para alinhar a conta à marca no futuro (ação do proprietário):
+A conta foi renomeada de `gpsrjbusiness-cmd` para `srjbusiness`. O GitHub redireciona o repositório antigo, mas não redireciona o endereço antigo do GitHub Pages.
 
-1. **Settings → Account → Change username** para `srjbusiness` ou `srj-business` (se disponível).
-2. O GitHub redireciona os repositórios, mas **o endereço do GitHub Pages muda** para `https://<novo-usuario>.github.io/srj-business/` e o antigo deixa de funcionar.
-3. Atualize as URLs absolutas listadas na seção "Domínio próprio" e o remote local: `git remote set-url origin https://github.com/<novo-usuario>/srj-business.git`.
-
-Com um domínio próprio configurado, o nome da conta deixa de aparecer para o público.
+O e-mail `gpsrjbusiness@gmail.com` é o endereço real de contato da empresa e não depende do nome da conta.
